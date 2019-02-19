@@ -41,3 +41,5 @@ Release*
 *VC.db
 *.vcxproj
 *.vcxproj.filters
+
+/dep_build
