@@ -15,8 +15,8 @@ endif()
 file (GLOB SOIL_SOURCES src/*.c)
 file (GLOB SOIL_HEADERS src/*.h)
 
-set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wno-unused-function")
-set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -Wno-deprecated-declarations")
+set(CMAKE_C_FLAGS  "${CMAKE_CXX_FLAGS} -Wno-unused-function")
+set(CMAKE_C_FLAGS  "${CMAKE_CXX_FLAGS} -Wno-deprecated-declarations")
 
 add_library (SOIL ${SOIL_SOURCES} ${SOIL_HEADERS})
 target_link_libraries (SOIL ${LIBRARIES})
