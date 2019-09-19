@@ -26,9 +26,13 @@
 	#include <wingdi.h>
 	#include <GL/gl.h>
 #elif defined(__APPLE__) || defined(__APPLE_CC__)
-	/*	I can't test this Apple stuff!	*/
-	#include <OpenGL/gl.h>
-	#include <Carbon/Carbon.h>
+    #ifdef IOS_BUILD
+        #include <Foundation/Foundation.h>
+        #include <OpenGLES/ES3/gl.h>
+    #else
+        #include <OpenGL/gl.h>
+        #include <Carbon/Carbon.h>
+    #endif
 	#define APIENTRY
 #elif defined(__ANDROID__)
 	#include <GLES/gl.h>
