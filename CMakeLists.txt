@@ -2,7 +2,9 @@ cmake_minimum_required (VERSION 2.6)
 
 project(SOIL)
 
-set(CMAKE_C_FLAGS "-x objective-c")
+if(${IOS_BUILD})
+	set(CMAKE_C_FLAGS "-x objective-c")
+endif()
 
 file(GLOB SOIL_SOURCES src/*.c)
 file(GLOB SOIL_HEADERS src/*.h)
