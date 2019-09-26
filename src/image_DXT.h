@@ -10,6 +10,7 @@
 #ifndef HEADER_IMAGE_DXT
 #define HEADER_IMAGE_DXT
 
+
 /**
 	Converts an image from an array of unsigned chars (RGB or RGBA) to
 	DXT1 or DXT5, then saves the converted image to disk.

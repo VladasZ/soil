@@ -26,6 +26,7 @@
 	#include <wingdi.h>
 	#include <GL/gl.h>
 #elif defined(__APPLE__) || defined(__APPLE_CC__)
+    #define GL_SILENCE_DEPRECATION
     #ifdef IOS_BUILD
         #include <Foundation/Foundation.h>
         #include <OpenGLES/ES3/gl.h>
