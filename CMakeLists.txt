@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 2.6)
 
 project(SOIL)
 
-if(${IOS_BUILD})
+if (APPLE)
 	set(CMAKE_C_FLAGS "-x objective-c")
 endif()
 
